@@ -1,11 +1,9 @@
-import { colors } from "./colors"
-
 export const playlists = [
     {
         id: '1',
         albumId: 1,
         title: "Teenagers Rock",
-        color: colors.orange,
+        color: "bg-gradient-to-b from-[#cc5400] to-zinc-900",
         cover:
             "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/rock-hits-mp3-cd-album-cover-template-design-2d9456fb8f1721d5a2f5fa7b78a6f886_screen.jpg?ts=1595860033",
         artists: ["Skillet", "PXNDX", "Obus", "Paramore", "Thirty Seconds to Mars"],
@@ -14,7 +12,7 @@ export const playlists = [
         id: '2',
         albumId: 2,
         title: "Reggae And Chill",
-        color: colors.red,
+        color: "bg-gradient-to-b from-[#da2735] to-zinc-900",
         cover:
             "https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54",
         artists: ["Bob Marley", "Damian Marley", "Stephen Marley", "Shaggy"],
@@ -23,7 +21,7 @@ export const playlists = [
         id: '3',
         albumId: 3,
         title: "Old School Reggaeton",
-        color: colors.yellow,
+        color: "bg-gradient-to-b from-[#0F084B] to-zinc-900",
         cover:
             "https://i.scdn.co/image/ab67616d0000b2739cc5f428e38ede9d45b4d552",
         artists: ["Don Omar", "Wisin Y Yandel", "RKM & Ken-Y",],
