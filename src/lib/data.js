@@ -14,7 +14,7 @@ export const playlists = [
         id: '2',
         albumId: 2,
         title: "Reggae And Chill",
-        color: colors.yellow,
+        color: colors.orange,
         cover:
             "https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54",
         artists: ["Bob Marley", "Damian Marley", "Stephen Marley", "Shaggy"],
@@ -23,10 +23,10 @@ export const playlists = [
         id: '3',
         albumId: 3,
         title: "Old School Reggaeton",
-        color: colors.yellow,
+        color: colors.red,
         cover:
             "https://i.scdn.co/image/ab67616d0000b2739cc5f428e38ede9d45b4d552",
-        artists: ["Don Omar", "Wisin Y Yandel", "RKM & Ken-y",],
+        artists: ["Don Omar", "Wisin Y Yandel", "RKM & Ken-Y",],
     },
 ]
 

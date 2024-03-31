@@ -1,5 +1,6 @@
 ---
 import Aside from '../components/Aside.astro';
+import { ViewTransitions } from "astro:transitions"
 
 interface Props {
 	title: string;
@@ -17,15 +18,15 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<ViewTransitions fallback="none" />
 	</head>
 	<body>
-		<div id="app" class="relative h-screen p-2 gap-2 text-sm ">
+		<div id="app" class="relative h-screen p-2 gap-2 text-xs">
 			<aside class="[grid-area:aside] flex flex-col overflow-y-auto">
 				<Aside/>
 			</aside>
 
-			<main class="[grid-area:main] bg-zinc-900 rounded-md overflow-y-auto">
-				MAIN
+			<main class="[grid-area:main] rounded-md overflow-y-auto bg-zinc-900 w-full">
 				<slot />
 			</main>
 
@@ -41,7 +42,7 @@ const { title } = Astro.props;
 		grid-template-areas: 
 			"aside main main"
 			"player player player";
-		grid-template-columns: 350px 1fr;
+		grid-template-columns: 300px 1fr;
 		grid-template-rows: 1fr auto;
 	}
 
