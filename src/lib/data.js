@@ -21,10 +21,19 @@ export const playlists = [
         id: '3',
         albumId: 3,
         title: "Old School Reggaeton",
-        color: "bg-gradient-to-b from-[#0F084B] to-zinc-900",
+        color: "bg-gradient-to-b from-[#172bde] to-zinc-900",
         cover:
             "https://i.scdn.co/image/ab67616d0000b2739cc5f428e38ede9d45b4d552",
         artists: ["Don Omar", "Wisin Y Yandel", "RKM & Ken-Y",],
+    },
+    {
+        id: '4',
+        albumId: 4,
+        title: "David Guetta Clasics",
+        color: "bg-gradient-to-b from-[#172bde] to-zinc-900",
+        cover:
+            "https://cdn.venngage.com/template/thumbnail/small/0171dbfd-9cba-446d-8920-990754182d11.webp",
+        artists: ["David Guetta"],
     },
 ]
 

@@ -1,5 +1,6 @@
 ---
 import Play from "../icons/Play.astro";
+import { CardPlayButton } from "./CardPlayButton";
 
 const { playlist } = Astro.props;
 const { id, cover, title, artists, } = playlist;
@@ -17,12 +18,12 @@ const artistString = artists.join(", ");
     z-10 bg-green-600 rounded-full text-black
     `
     >
-        <Play client:visible />
+        <CardPlayButton id={id} client:visible/>
     </div>
 
     <a
         href={`/playlist/${id}`}
-        class="playlist-item transition-all duration-300 flex relative p-2 overflow-hidden gap-2 pb-2 rounded-md w-36 flex-col"
+        class="transition-all duration-300 flex relative p-2 overflow-hidden gap-2 pb-2 rounded-md w-36 flex-col"
         transition:name=`playlist ${id} box`
     >
         <picture class="aspect-square w-full h-auto flex-none">

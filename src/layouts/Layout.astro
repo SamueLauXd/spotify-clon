@@ -1,6 +1,7 @@
 ---
 import Aside from '../components/Aside.astro';
 import { ViewTransitions } from "astro:transitions"
+import {Player} from "../components/Player"
 
 interface Props {
 	title: string;
@@ -31,7 +32,7 @@ const { title } = Astro.props;
 			</main>
 
 			<footer class="[grid-area:player] bg-zinc-900 rounded-md min-h-14">
-				PLAYER
+				<Player client:load transition:name="player" transition:persist/>
 			</footer>
 		</div>
 	</body>
