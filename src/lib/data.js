@@ -5,7 +5,7 @@ export const playlists = [
         id: '1',
         albumId: 1,
         title: "Teenagers Rock",
-        color: colors.yellow,
+        color: colors.orange,
         cover:
             "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/rock-hits-mp3-cd-album-cover-template-design-2d9456fb8f1721d5a2f5fa7b78a6f886_screen.jpg?ts=1595860033",
         artists: ["Skillet", "PXNDX", "Obus", "Paramore", "Thirty Seconds to Mars"],
@@ -14,7 +14,7 @@ export const playlists = [
         id: '2',
         albumId: 2,
         title: "Reggae And Chill",
-        color: colors.orange,
+        color: colors.red,
         cover:
             "https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54",
         artists: ["Bob Marley", "Damian Marley", "Stephen Marley", "Shaggy"],
@@ -23,7 +23,7 @@ export const playlists = [
         id: '3',
         albumId: 3,
         title: "Old School Reggaeton",
-        color: colors.red,
+        color: colors.yellow,
         cover:
             "https://i.scdn.co/image/ab67616d0000b2739cc5f428e38ede9d45b4d552",
         artists: ["Don Omar", "Wisin Y Yandel", "RKM & Ken-Y",],
@@ -79,6 +79,15 @@ export const songs = [
         "artists": ["PXNDX"],
         "album": "Teengaers Rock",
         "duration": "3:51"
+    },
+    {
+        "id": 5,
+        "albumId": 1,
+        "title": "Te Visitará La Muerte",
+        "image": `https://d1csarkz8obe9u.cloudfront.net/posterpreviews/rock-hits-mp3-cd-album-cover-template-design-2d9456fb8f1721d5a2f5fa7b78a6f886_screen.jpg?ts=1595860033`,
+        "artists": ["Obus"],
+        "album": "Teengaers Rock",
+        "duration": "3:43"
     },
 
     //playlist 2: Reggae And Chill
