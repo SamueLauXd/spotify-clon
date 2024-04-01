@@ -4,7 +4,7 @@ import { Pause, Play } from "./Player";
 export function SongPlayButton({song}) {
     const { setCurrentMusic, setIsPlaying, isPlaying, currentMusic} = usePlayerStore(state => state)
 
-    const isPlayingSong = isPlaying && currentMusic.song.id === song.id
+    const isPlayingSong = isPlaying && currentMusic.song.id === song.id && currentMusic.playlist.id === song.albumId.toString()
 
     const reproduceSong = () => {
         if (isPlayingSong) {
@@ -25,8 +25,8 @@ export function SongPlayButton({song}) {
         <button onClick={reproduceSong}>
             {
                 isPlayingSong 
-                ? <Pause className='text-white'/>
-                : <Play className='text-white'/>
+                ? <Pause className='text-white hover:text-green-500'/>
+                : <Play className='text-white hover:text-green-500'/>
             }
         </button>
     )
