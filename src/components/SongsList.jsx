@@ -35,7 +35,10 @@ export function SongsList({ songs }) {
                         return (
                         <tr key={song.id} className={`playlist-song border-spacing-0 text-gray-300 text-sm font-light hover:bg-white/10 overflow-hidden transition duration-300 ${trStyle}`}>
                             <td className="px-4 py-2 rounded-tl-lg rounded-bl-lg w-5 relative">
-                                <p className="playlist-number">{index + 1}</p>
+                                {
+                                    isPlayingSong ? <></>
+                                    : <p className="playlist-number">{index + 1}</p> 
+                                }
                                 <div className="playlist-button opacity-0 absolute left-[5%] top-[38%] ml-3">
                                     <SongPlayButton client:visible song={song} />
                                 </div>
