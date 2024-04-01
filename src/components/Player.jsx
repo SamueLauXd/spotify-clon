@@ -177,6 +177,8 @@ export function Player() {
     }, [currentMusic])
 
     const handleClick = () => {
+        const {song} = currentMusic
+        if (!song) return
         setIsPlaying(!isPlaying)
     }
 
@@ -210,7 +212,7 @@ export function Player() {
 
     return (
         <section className="flex p-2 items-center justify-between text-white z-50">
-            <div className="w-[270px] overflow-hidden">
+            <div className="w-[270px] hidden md:block overflow-hidden">
                 <CurrentSong {...currentMusic.song} />
             </div>
 
@@ -234,7 +236,7 @@ export function Player() {
             </div>
 
 
-            <div>
+            <div className="w-[270px] px-4 flex justify-end overflow-hidden">
                 <VolumeControl />
             </div>
 

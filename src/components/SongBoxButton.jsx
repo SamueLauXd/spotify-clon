@@ -1,6 +1,6 @@
 import { usePlayerStore } from "../store/playerStore";
 
-export function SongTitleButton({song, children, className}) {
+export function SongBoxButton({song, children, className}) {
     const { setCurrentMusic, setIsPlaying, isPlaying, currentMusic} = usePlayerStore(state => state)
 
     const isPlayingSong = isPlaying && currentMusic.song.id === song.id
@@ -19,8 +19,8 @@ export function SongTitleButton({song, children, className}) {
     }
 
     return (
-        <button className={className} onDoubleClick={reproduceSong}>
+        <tr className={className} onDoubleClick={reproduceSong}>
             {children}
-        </button>
+        </tr>
     )
 }

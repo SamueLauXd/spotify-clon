@@ -30,7 +30,7 @@ const playlistSongs = songs.filter(song => song.albumId.toString() === id)
             </div>
         </header>
         <section class="p-4 bg-zinc-900/30 h-full">
-            <div class="mb-6">
+            <div class="mb-6 text-black">
                 <CardPlayButton variant='large' size="large" id={id} client:visible/>
             </div>
             <MusicTable songs={playlistSongs}/>

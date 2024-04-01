@@ -7,25 +7,25 @@ import {playlists} from "../lib/data"
 import SidePlaylist from "./SidePlaylist.astro"
 ---
 <nav class="flex flex-col flex-1 gap-2">
-    <div class="rounded-md bg-zinc-900 p-4 flex flex-col gap-6">
+    <div class="rounded-md bg-zinc-900 p-4 flex flex-col items-center md:items-start gap-6">
         <ul>
             <SideMenuItem href="/">
                 <Home/>
-                Inicio
+                <p class="hidden md:block">Inicio</p>
             </SideMenuItem>
         </ul>
         <ul>
             <SideMenuItem>
                 <Search/>
-                Buscar
+                <p class="hidden md:block">Buscar</p>
             </SideMenuItem>
         </ul>
     </div>
-    <div class="rounded-md bg-zinc-900 p-2 flex-1 flex flex-col gap-2">
+    <div class="rounded-md bg-zinc-900 p-2 flex-1 flex flex-col items-center md:items-start gap-2">
         <ul class="mb-2 p-2">
             <SideMenuItem>
                 <Library/>
-                Tu biblioteca
+                <p class="hidden md:block">Tu biblioteca</p>
             </SideMenuItem>
         </ul>
 
