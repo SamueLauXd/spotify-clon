@@ -1,9 +1,9 @@
 ---
 import NavMenu from "../../components/NavMenu.astro";
 import Layout from "../../layouts/Layout.astro";
-import MusicTable from "../../components/MusicTable.astro"
 import { playlists, songs } from "../../lib/data";
 import { CardPlayButton } from "../../components/CardPlayButton";
+import {SongsList} from "../../components/SongsList"
 
 const {id} = Astro.params
 
@@ -32,7 +32,7 @@ const playlistSongs = songs.filter(song => song.albumId.toString() === id)
             <div class="mb-6 text-black">
                 <CardPlayButton variant='large' size="large" id={id} client:visible/>
             </div>
-            <MusicTable songs={playlistSongs}/>
+            <SongsList client:visible songs={playlistSongs}/>
         </section>
     </div>
 </Layout>
