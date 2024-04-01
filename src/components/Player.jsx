@@ -88,7 +88,7 @@ const VolumeControl = () => {
             </button>
 
             <Slider
-                defaultValue={[100]}
+                defaultValue={[10]}
                 max={100}
                 min={0}
                 value={[volume * 100]}
@@ -172,6 +172,7 @@ export function Player() {
             audioRef.current.src = src
             audioRef.current.volume = volume
             audioRef.current.play()
+            console.log(song.id);
         }
     }, [currentMusic])
 
@@ -185,11 +186,24 @@ export function Player() {
             let actualSong = song.id
             setIsPlaying(true)
             setCurrentMusic({ songs, playlist, song: songs[actualSong++] })
-            if (song.id > songs.length) {
-                setIsPlaying(true)
-                //setCurrentMusic({songs, playlist, song: songs[0]})
-                setCurrentMusic({ songs, playlist, song: songs.find(song => song.id === 1) })
-            }
+        }
+        if (song && song.id > songs.length - 1) {
+            setIsPlaying(true)
+            setCurrentMusic({songs, playlist, song: songs[0]})
+        }
+    }
+
+    const previousSong = () => {
+        const { song, playlist, songs } = currentMusic
+        if (song) {
+            let previousSong = song.id - 2
+            setIsPlaying(true)
+            setCurrentMusic({ songs, playlist, song: songs[previousSong] })
+        }
+
+        if (song.id < 1){
+            setIsPlaying(true)
+            setCurrentMusic({ songs, playlist, song: songs[songs.length] })
         }
     }
 
@@ -201,7 +215,7 @@ export function Player() {
 
             <div className="flex flex-col items-center">
                 <div className="flex gap-2 items-center">
-                    <button className="rounded-full p-2 hover:bg-zinc-700 w-9 h-9 grid place-items-center">
+                    <button onClick={previousSong} className="rounded-full p-2 hover:bg-zinc-700 w-9 h-9 grid place-items-center">
                         <PrevIcon />
                     </button>
 
@@ -223,7 +237,7 @@ export function Player() {
                 <VolumeControl />
             </div>
 
-            <audio ref={audioRef} />
+            <audio ref={audioRef} onEnded={nextSong} />
         </section>
     )
 }

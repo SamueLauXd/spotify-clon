@@ -2,7 +2,7 @@ export const playlists = [
     {
         id: '1',
         albumId: 1,
-        title: "Teenagers Rock",
+        title: "Emo Shit",
         color: "bg-gradient-to-b from-[#cc5400] to-zinc-900",
         cover:
             "https://d1csarkz8obe9u.cloudfront.net/posterpreviews/rock-hits-mp3-cd-album-cover-template-design-2d9456fb8f1721d5a2f5fa7b78a6f886_screen.jpg?ts=1595860033",
