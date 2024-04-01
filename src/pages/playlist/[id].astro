@@ -4,6 +4,7 @@ import Layout from "../../layouts/Layout.astro";
 import MusicTable from "../../components/MusicTable.astro"
 import { playlists, songs } from "../../lib/data";
 import {PlayingIcon} from "../../components/Player"
+import { CardPlayButton } from "../../components/CardPlayButton";
 
 const {id} = Astro.params
 
@@ -29,6 +30,9 @@ const playlistSongs = songs.filter(song => song.albumId.toString() === id)
             </div>
         </header>
         <section class="p-4 bg-zinc-900/30 h-full">
+            <div class="mb-6">
+                <CardPlayButton variant='large' size="large" id={id} client:visible/>
+            </div>
             <MusicTable songs={playlistSongs}/>
         </section>
     </div>

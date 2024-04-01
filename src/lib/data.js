@@ -14,7 +14,7 @@ export const playlists = [
         title: "Reggae And Chill",
         color: "bg-gradient-to-b from-[#da2735] to-zinc-900",
         cover:
-            "https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54",
+            "https://i1.sndcdn.com/artworks-000024831849-cwgs97-t500x500.jpg",
         artists: ["Bob Marley", "Damian Marley", "Stephen Marley", "Shaggy"],
     },
     {
@@ -103,7 +103,7 @@ export const songs = [
         "id": 1,
         "albumId": 2,
         "title": "Praise Jah In The Moonlight",
-        "image": `https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54`,
+        "image": `https://i1.sndcdn.com/artworks-000024831849-cwgs97-t500x500.jpg`,
         "artists": ["YG Marley"],
         "album": "Reggae And Chill",
         "duration": "4:23"
@@ -112,7 +112,7 @@ export const songs = [
         "id": 2,
         "albumId": 2,
         "title": "Jamming",
-        "image": `https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54`,
+        "image": `https://i1.sndcdn.com/artworks-000024831849-cwgs97-t500x500.jpg`,
         "artists": ["Bob Marley"],
         "album": "Reggae And Chill",
         "duration": "3:33"
@@ -121,7 +121,7 @@ export const songs = [
         "id": 3,
         "albumId": 2,
         "title": "Rasta Love",
-        "image": `https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54`,
+        "image": `https://i1.sndcdn.com/artworks-000024831849-cwgs97-t500x500.jpg`,
         "artists": ["Protoje", "Ky-Mani Marley"],
         "album": "Reggae And Chill",
         "duration": "3:50"
@@ -130,7 +130,7 @@ export const songs = [
         "id": 4,
         "albumId": 2,
         "title": "Medication",
-        "image": `https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54`,
+        "image": `https://i1.sndcdn.com/artworks-000024831849-cwgs97-t500x500.jpg`,
         "artists": ["Damian Marley", "Stephen Marley"],
         "album": "Reggae And Chill",
         "duration": "4:26"
@@ -139,7 +139,7 @@ export const songs = [
         "id": 5,
         "albumId": 2,
         "title": "Angel",
-        "image": `https://i.scdn.co/image/ab67706c0000da84b45d4b6c1b0a80ebfeafae54`,
+        "image": `https://i1.sndcdn.com/artworks-000024831849-cwgs97-t500x500.jpg`,
         "artists": ["Shaggy", "Rayvon"],
         "album": "Reggae And Chill",
         "duration": "3:55"
