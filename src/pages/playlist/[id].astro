@@ -3,8 +3,8 @@ import NavMenu from "../../components/NavMenu.astro";
 import Layout from "../../layouts/Layout.astro";
 import MusicTable from "../../components/MusicTable.astro"
 import { playlists, songs } from "../../lib/data";
-import {PlayingIcon} from "../../components/Player"
 import { CardPlayButton } from "../../components/CardPlayButton";
+import { usePlayerStore } from "../../store/playerStore";
 
 const {id} = Astro.params
 
@@ -12,7 +12,7 @@ const selectedPlaylist = playlists.find(playlist => playlist.id === id)
 const playlistSongs = songs.filter(song => song.albumId.toString() === id)
 
 ---
-<Layout title=`Playlist ${selectedPlaylist?.title}`>
+<Layout title=`${selectedPlaylist?.title}`>
     <div transition:name=`playlist ${id} box` class={`flex gap-2 flex-col h-full ${selectedPlaylist?.color}`}
     >
     <span class="p-4">

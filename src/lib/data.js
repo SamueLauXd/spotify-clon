@@ -192,4 +192,52 @@ export const songs = [
             "album": "Old School Reggaeton",
             "duration": "3:16"
         },
+
+        //Playlist 4: David Guetta clasics
+
+        {
+            "id": 1,
+            "albumId": 4,
+            "title": "Memories",
+            "image": `https://cdn.venngage.com/template/thumbnail/small/0171dbfd-9cba-446d-8920-990754182d11.webp`,
+            "artists": ["David Guetta", "Kid Cudi"],
+            "album": "David Guetta Clasics",
+            "duration": "3:29"
+        },
+        {
+            "id": 2,
+            "albumId": 4,
+            "title": "Sexy Chick",
+            "image": `https://cdn.venngage.com/template/thumbnail/small/0171dbfd-9cba-446d-8920-990754182d11.webp`,
+            "artists": ["David Guetta", "Akon"],
+            "album": "David Guetta Clasics",
+            "duration": "3:32"
+        },
+        {
+            "id": 3,
+            "albumId": 4,
+            "title": "Bad",
+            "image": `https://cdn.venngage.com/template/thumbnail/small/0171dbfd-9cba-446d-8920-990754182d11.webp`,
+            "artists": ["David Guetta", "Showtek"],
+            "album": "David Guetta Clasics",
+            "duration": "2:51"
+        },
+        {
+            "id": 4,
+            "albumId": 4,
+            "title": "Shot Me Down",
+            "image": `https://cdn.venngage.com/template/thumbnail/small/0171dbfd-9cba-446d-8920-990754182d11.webp`,
+            "artists": ["David Guetta", "Skylar Grey"],
+            "album": "David Guetta Clasics",
+            "duration": "3:13"
+        },
+        {
+            "id": 5,
+            "albumId": 4,
+            "title": "Where Them Girls At",
+            "image": `https://cdn.venngage.com/template/thumbnail/small/0171dbfd-9cba-446d-8920-990754182d11.webp`,
+            "artists": ["David Guetta", "Nicki Minaj", "Flo Rida"],
+            "album": "David Guetta Clasics",
+            "duration": "3:48"
+        },
 ]
